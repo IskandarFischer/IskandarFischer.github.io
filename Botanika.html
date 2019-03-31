@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>Iskandar Ariff Fischer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,12 +16,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Iskandar A. Fischer</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,10 +30,17 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h1 class="major">Botanika</h1>
+							<a href ="http://playbotanika.com/"> <span class="image fit"><img src="http://playbotanika.com/Content/images/defend-yours.jpg" alt="" /></span> </a>
+							<p>
+									I got put on Botanika as firstly a gameplay programmer, however through time I had some influence in the backend and the networking side of the game. Through the development of Botanika I learnt a lot about solving solutions creatively and thinking outside the box, as a lot of the features that I worked on were unconventional or undocumented online, and therefore I had to implement my own design of a lot of features. It’s not to say that I haven’t looked at features in other games, in fact a lot of features that seemed to be in different games I took inspiration of. The most potent example was with a effect, skill or spell system, it ended up very abstract, took a very data oriented approach through taking WoW’s spell system as a base and trying to understand and dissect their system through a resources such as the online databases that contain a list of all of WoW’s abilities. It turned out that the spell system of WoW was very modular and encompassed more than simply spells, it also handled PvP, Skyboxes, interactions with the items, and many more. I then decided to implement a data oriented approach through the use of scriptable object, and create a very modular spell system which would be easily maintained and expanded through new classes inheriting from a single script. To prevent creating super scripts which handled all of the interaction, I implemented modularity through separating a lot of the features into smaller components which allowed the system to shine even more.
+									<br/><br/>
+									Other important features that I worked on was the compatibility between devices and being able to handle inputs for several devices, such as the Vive, Oculus, Windows Mixed Reality and PC. Through research and understanding the API calls, hardware structure, and DLL scripts, I implemented several script which were able to take any of the devices and apply the correct transformation and inputs seamlessly between devices.
+									<br/><br/>
+									One of the biggest challenges with Botanika occurred when dealing with the Networking infrastructure. While we used Unity, we implemented our own networking system, as we felt that the networking component of Unity was somewhat lacking. I had to devise solutions to reliably spawn player made cities united under a single guild regardless of size, and make sure it was consistent and in line with the server. This proved quite challenging to devise an architecture for storing and loading the information but it was great fun. Through it we also devised several redesign of the networking system and object handling through a network providing a even more robust networking architecture. By being exposed to these networking issues, I expanded my knowledge on TCP clients, HTTP protocols, Web sockets, object handling through a network. In addition, due to the nature of the game, I had to reduce network using while passing objects through the network through clever ways such as using algorithms to compress several data members into one to reduce the overall network usage, as Botanika needed to be able to service a lot of players.
+									<br/><br/>
+									During the project I also got exposed quite heavily to Entity Framework and how to architecture a database thanks to the lead programmer. With the help of the lead programmer, I was able to expand my knowledge on how to use MVC in Entity Framework and also create logical and robust database data structures to hold all of the needed information. Due to the nature of the game, I worked more heavily on the controllers and API calls from the game more than the database, I only added, modified or read data from the Database but didn’t create new database tables without deciding a good design with the lead programmer, however, later in the development cycle of Botanika, the designs I was implementing needed little to no revision as I understood the structure of databases much better than when I started on the project.
+							</p>
 						</div>
 					</section>
 
