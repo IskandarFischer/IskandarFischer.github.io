@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>Iskandar Ariff Fischer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,12 +16,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Iskandar A. Fischer</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,10 +30,28 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h1 class="major">Scrap Attack VR</h1>
+							<div style = "display: flex; justify-content: center;">
+							<span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" type="text/html" src="https://www.youtube.com/embed/65rLOqDSaFU?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" allowfullscreen="true" style="border: 0px; display: block; margin: 0px; width: 662px; height: 372.428px;" data-ratio="0.5625806451612904" data-width="775" data-height="436"></iframe></span>
+							</div>
+							<p style = "text-align: center;"> <a href="https://store.steampowered.com/app/774401/Scrap_Attack_VR/">Scrap Attack VR On Steam</a> </p>
+							<p>During the project I had several different roles including various gameplay features, porting the game to different platforms, handling the bridge between the server and the clients and providing help when needed for the database development and finally being part of the Live DevOps team in the final development of Scrap Attack.
+							<br/><br/>
+							A few of the biggest challenges that I faced during the development of Scrap Attack were redesigning several features and scripts to be more efficient and easier to use for both programmers and designers. I was the member of the team which had the most impact on the games performance by working closely with artist and finding ways of modifying the art assets to increase performance, and looking at the profiler to find and redesign scripts which took too much time to execute. Designing new features especially one pertaining to recording in-game footage for the making of the Scrap Attack VR trailers. Porting Botanika to the standalone game Scrap Attack VR and the porting to UWP and later adding compatibility to Vive, Oculus, Windows Mixed Reality. Worked on solving challenges with publishing the game to the Steam Store and Microsoft Store. Another challenge that arose was the creation of a trailer for the game which required a redesign of the designed filming architecture. One of the biggest challenges however was working on a big project that involved many dependencies and a large code base.
+							<br/><br/>
+							While facing the challenges of feature creation, as a team, we decided how the architecture of the solution would be and how the delegation of the task would be done. Once the initial feature design meeting would be completed, I would start creating an architecture and solutions to the delegated feature. Once I designed a robust architecture, I implemented it and relayed the feature with the design team to ensure that the delivered feature is enjoyable and fitting to the requirements, I also relayed the feature with the artist to allow for an easier incorporation of the assets by modifying the code or discussing with the artist as to what is the best way to design the incorporation of the assets.
+							This allowed for me to inspect the profiler and diagnosed scripts or assets which were inefficient and report the problems by adding them to Redmine and solving the issues by working with artist or redesigning the scripts to be more efficient.
+							<br/><br/>
+							A lot of challenges arose when dealing with scripts ported over from Botanika as they had very poor architecture. By redesigning the big features and providing a new solution to the problem, the team were able to create features using the designed features much more easily and iterate on features far more quickly than before speeding up development time significantly.
+							While porting the game several challenges arose.
+							<br/><br/>
+							Firstly the old networking architecture didn’t allow compilation for UWP, this was solved by removing a lot of the networking code and by allowing scripts to bypass the networking features at the lower level.  Another issue that arose was the previous architecture didn’t allow for Vive, Oculus or Windows Mixed Reality headsets to be used. I redesigned and implemented a new input handler to allow for any type of inputs to be handled. In addition, several challenges arose when adding different headsets as there were a lot of conflicting scripts, and combining several of the different scripts for each headsets into one. In addition, a lot of different statements depending on which headset or compilation method we’re created to smartly choose which Key-Bindings to use.
+							<br/><br/>
+							While publishing the game to steam, I worked on integrating several steam features to the game, solved issues with how scripts didn’t allow to be compiled due to having to publish to both the Windows Store and Steam as some scripts wouldn’t pass Microsoft Certification, and finally learnt the build pipeline for both the Windows Store and Steam and actively published the builds to the stores.
+							<br/><br/>
+							During the end of the project I directed, filmed, and edited the newest Scrap Attack Trailer while also designing several levels by myself and leading the art direction of those levels.
+							<br/><br/>
+							The project was presented to Google.</p>
 						</div>
 					</section>
 
@@ -45,7 +61,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Iskandar A. Fischer. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
